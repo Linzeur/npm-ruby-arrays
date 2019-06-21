@@ -1,7 +1,57 @@
 {
-  "name": "Miniassignment",
+  "name": "methods-array-ruby",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Crear las funciones o métodos de los Array del lenguaje Ruby",
+  "main": "dist/array-extension.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/array-extension.mjs",
+  "source": "src/array-extension.js",
+  "scripts": {
+    "test": "jest",
+    "build": "microbundle",
+    "prebuild": "yarn test",
+    "prepublish": "yarn build"
+  },
+  "keywords": [
+    "Ruby",
+    "Array",
+    "Enumerable"
+  ],
   "author": "Brayan Ciudad <linzeur@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.17.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "index.js.flow",
+    "package.json",
+    "README.md"
+  ]
 }

@@ -1,1 +1,1 @@
-# Functions of Array of Ruby in Javascript
+# Methods-Array-Ruby
