@@ -7,3 +7,4 @@ If you has developed in Ruby beforely and you miss functions of the class Enumer
 ## Arrays
 
 - Sample
+- Take
