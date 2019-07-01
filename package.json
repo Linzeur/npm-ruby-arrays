@@ -1,7 +1,7 @@
 {
   "name": "methods-array-ruby",
-  "version": "1.0.0",
-  "description": "Crear las funciones o métodos de los Array del lenguaje Ruby",
+  "version": "1.0.1",
+  "description": "Use functions which exist in Ruby for the array objects",
   "main": "dist/array-extension.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/array-extension.mjs",
